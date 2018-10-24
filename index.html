@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Lab-3 Telemática-EAFIT</title>
 </head>
+
 <body>
     <header>
-        <h1>Laboratorio 3 Multimedia</h1>
-        <p>Grupo RTE</p>
+        <h1>Laboratorio 3 Telemática</h1>
+        <p>Universidad EAFIT</p>
     </header>
-    <div class="laboratorio">
-        <img class="imagen" src="assets/telefono.jpg" alt="image" title="rack"/>
+    <h5 class="drive">Para descargar éstas  imágenes visite Google Drive presionando el siguiente ícono: <a href="https://drive.google.com/drive/folders/1fjCGYMGvwIvsqbLgerPIaarVRaG8bsT1?usp=sharing" target="_blank"><img class="icon_drive" width="40px" src="images/drive.png" alt="drive"></a></h5>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Interfaces Configuradas</h3>
+        <hr>
+        <img class="imagen" src="images/Interfaces Configuration.png" alt="image" title="Configuring Interfaces" />
     </div>
-    <section class="dibujos">
-        <div class="mitad-left">
-            <div class="avatar"></div>
-        </div>
-        <div class="mitad-left">
-            <ul>
-                The magic list:
-                <li onclick="cambiarCara(this.id)" id="negra">
-                    La negra
-                </li>
-                <li onclick="cambiarCara(this.id)" id="man">
-                    El man
-                </li>
-                <li onclick="cambiarCara(this.id)" id="baby">
-                    El baby
-                </li>
-                <li onclick="cambiarCara(this.id)" id="old">
-                    El viejo
-                </li>
-                <li onclick="cambiarCara(this.id)" id="lunatica">
-                    La lunatica
-                </li>
-            </ul>
-        </div>
-
-        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #aaa;">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
-
-        <button>Click !</button>
-    </section>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Rutas IP Sin Configurar</h3>
+        <hr>
+        <img class="imagen" src="images/IP Routes Without Configuration.png" alt="image" title="Configuring Interfaces" />
+    </div>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Tabla De Rutas Estáticas</h3>
+        <hr>
+        <img class="imagen" src="images/STATIC IP Route.png" alt="image" title="Configuring Interfaces" />
+    </div>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Comando: show interface ip brief</h3>
+        <hr>
+        <img class="imagen" src="images/SHOW IP Interface brief.png" alt="image" title="Configuring Interfaces" />
+    </div>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Ping A Todas Las IP De Los Demás Equipos</h3>
+        <hr>
+        <img class="imagen" src="images/PING to all IPs.png" alt="image" title="Configuring Interfaces" />
+    </div>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Tabla RIP</h3>
+        <hr>
+        <img class="imagen" src="images/RIP IP Route.png" alt="image" title="Configuring Interfaces" />
+    </div>
+    <div class="card_picture">
+        <hr>
+        <h3 class="picture_title">Configurando DHCP</h3>
+        <hr>
+        <img class="imagen" src="images/DHCP Server Configuration.png" alt="image" title="Configuring Interfaces" />
+    </div>
 </body>
 
 </html>
