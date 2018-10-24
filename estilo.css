@@ -44,3 +44,7 @@ header {
 .icon_drive{
   vertical-align: middle;
 }
+pre{
+  font-size: 12px;
+  text-align: center;
+}
