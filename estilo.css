@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Coiny', 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0x;
+}
+
+html {
+    background-color: white;
+}
+
+header {
+    background-color: blueviolet;
+    color: yellow;
+    padding: 10px;    
+    text-align: center;    
+    text-shadow: 2px 2px 50px black;
+    box-shadow: 0px 1px 10px black;
+    margin-bottom: 40px;
+}
+
+section.dibujos{
+    text-align: center;
+}
+
+ul{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    list-style-type: none;
+    box-shadow: 0px 10px 10px -10px black;
+}
+ul li{
+    margin: 5px;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    transition: transform 300ms;
+}
+ul li:hover{
+    transform: scale(1.1);
+}
+
+.mitad-left {
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.imagen {
+  max-width: 375px;
+  margin: 100px;
+  border-radius: 24px;
+  box-shadow: 1.25px 1.25px 6.25px gray, -1.25px -1.25px 1.25px gainsboro, 0px 5px 25px black;
+}
+
+.avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url('./assets/baby.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* Material style */
+button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 2px;
+    font-size: 22px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    background: #2196F3;
+  }
+  
+  /* Ripple magic */
+  button{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(155, 155, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+  }
+
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #myCanvas {
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+      animation-fill-mode: both;
+      animation-name: girar;
+  }
+  
+  button:focus:not(:active):after {
+    animation: ripple 1s ease-out;
+  }
+  

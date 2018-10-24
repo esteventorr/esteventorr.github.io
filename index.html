@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <title>Lab-3 Telemática-EAFIT</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio 3 Multimedia</h1>
+        <p>Grupo RTE</p>
+    </header>
+    <div class="laboratorio">
+        <img class="imagen" src="assets/telefono.jpg" alt="image" title="rack"/>
+    </div>
+    <section class="dibujos">
+        <div class="mitad-left">
+            <div class="avatar"></div>
+        </div>
+        <div class="mitad-left">
+            <ul>
+                The magic list:
+                <li onclick="cambiarCara(this.id)" id="negra">
+                    La negra
+                </li>
+                <li onclick="cambiarCara(this.id)" id="man">
+                    El man
+                </li>
+                <li onclick="cambiarCara(this.id)" id="baby">
+                    El baby
+                </li>
+                <li onclick="cambiarCara(this.id)" id="old">
+                    El viejo
+                </li>
+                <li onclick="cambiarCara(this.id)" id="lunatica">
+                    La lunatica
+                </li>
+            </ul>
+        </div>
+
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #aaa;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <button>Click !</button>
+    </section>
+</body>
+
+</html>
