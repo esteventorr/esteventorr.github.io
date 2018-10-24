@@ -33,7 +33,7 @@ header {
 .card_picture{
   margin: 20px;
   padding: 10px;
-  border: 2px solid gray;
+  border: 2px solid #808080;
   border-radius: 10px;
   background-color: lightgray;
 }
