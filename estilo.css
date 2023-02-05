@@ -1,25 +1,36 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-family: "Roboto", "Courier New", Courier, monospace;
   margin: 0;
   padding: 0x;
 }
 html {
-  background-color: gainsboro;
+  background-image: linear-gradient(to right, #9a77f1, #f68afa);
 }
 .main-wrapper {
   display: block;
   flex-direction: column;
 }
 header {
-  font-size: 1.8vmax;
-  background-color: gray;
+  font-size: 2rem;
+  background-color: black;
   color: white;
-  padding: 0.5vmax;
+  padding: 5px;
   text-align: center;
-  text-shadow: 0.1vmax 0.1vmax 0.3vmax black;
-  box-shadow: 0vmax 0.1vmax 0.3vmax black;
-  margin-bottom: 2vmax;
+  box-shadow: 0px 1px 3px black;
+  margin-bottom: 2px;
+}
+@media screen and (max-width: 512px) {
+  header {
+    font-size: 1.2em !important;
+  }
+}
+@media screen and (min-width: 513px) {
+  header {
+    font-size: 1.5em !important;
+  }
 }
 .content-wrapper {
   display: flex;
@@ -27,32 +38,64 @@ header {
   justify-content: center;
 }
 .card {
-  height: fit-content;
-  font-size: 1vmax;
-  width: 30vmax;
-  min-width: 20vmax;
-  margin: 1vmax;
-  border: 0.1vmax solid black;
-  border-radius: 2vmax;
-  overflow: hidden;
+  max-width: 100%;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: auto;
   background-color: white;
 }
-@media (max-width: 800px) {
-  .card {
-    font-size: 2vmax;
-  }
+.card p,
+.card li {
+  font-size: 1.2em;
 }
 .card section {
   text-align: center;
-  background-color: aquamarine;
-  padding: 1vmax;
+  background-color: #000000;
+  padding: 20px;
   color: white;
-  text-shadow: 0.1vmax 0.1vmax 0.3vmax black, -0.1vmax -0.1vmax 0.1vmax black;
-  box-shadow: 0vmax 0.1vmax 0.3vmax black, 0vmax -0.1vmax 0.3vmax black;
-}
-.card ul {
-  padding-inline-start: 4vmax;
+  box-shadow: 0px 1px 3px black, 0px -1px 3px black;
 }
 .card .list {
-  padding: 2vmax;
+  padding: 20px;
+}
+.card ul {
+  padding-inline-start: 20px;
+}
+.world {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.world img {
+  margin: 5px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 1px #bdbdbd, 0px 1px 1px #535353;
+  background-color: white;
+  padding: 3px;
+  transition: box-shadow 0.3s ease-in, padding 0.2s linear;
+  max-width: 100%;
+}
+.world img:hover {
+  padding: 1px;
+  box-shadow: 0px 2px 5px black;
+}
+
+#inputContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  display: inline-block;
+  width: 50vw;
+  height: 4vh;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: large;
 }
