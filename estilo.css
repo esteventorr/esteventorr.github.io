@@ -38,8 +38,10 @@ header {
   justify-content: center;
 }
 .card {
-  max-width: 100%;
-  margin: 5px;
+  max-width: 1024px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
   border: 1px solid black;
   border-radius: 10px;
   overflow: auto;
