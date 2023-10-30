@@ -71,9 +71,12 @@ header {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: auto;
+  max-width: 1024px;
+  margin: auto;
 }
 .world img {
   margin: 5px;
