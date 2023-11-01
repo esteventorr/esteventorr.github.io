@@ -1,1 +1,0 @@
-console.log("training.js loaded");
